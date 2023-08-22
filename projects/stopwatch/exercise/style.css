@@ -28,6 +28,8 @@ h3 {
 }
 
 #seconds,
+#hours,
+#minutes,
 #tens {
   font-size: 2em;
 }

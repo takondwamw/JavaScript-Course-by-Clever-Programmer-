@@ -2,3 +2,32 @@ html, body {
   font-family: 'Inter', sans-serif;
   font-family: 'Lato', sans-serif;
 }
+.card{
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: inset 3px;
+}
+.container{
+  display: flex;;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  align-content: center;
+  color: white;
+  padding: 30px;;
+  cursor: pointer;
+}
+.box > p.text {
+  padding: 30px;
+  color: white;
+}
+.black{
+  background-color: black;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
