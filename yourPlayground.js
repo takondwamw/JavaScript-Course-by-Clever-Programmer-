@@ -117,3 +117,4 @@ getImg.onclick = () => {
     
 }
 // console.log("hello");
+
