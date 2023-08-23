@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SuperHero Api</title>
+</head>
+<body>
+    <div class="container">
+        <input type="search" class="control" placeholder="Search Your Super Hero Here">
+
+        <button class="btn" onclick="getSuperHero()">
+            Get Random Hero
+        </button>
+
+    </div>
+    <div class="container mt-2" id="results">
+
+    </div>
+
+
+    <div class="card mt-2">
+        <div class="bio mt-2">
+            <span class="fullName">Full Name</span>
+        </div>
+        
+        <div id="img"  width="500px" height="500px"></div> 
+
+        <p class="text" id="name">Name</p>
+        <div class="info">
+        </div>
+       
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

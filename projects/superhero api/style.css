@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+}
+.btn{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(1, 10, 22, 0.859);
+    font-size: large;
+    padding: 14px;
+}
+.control{
+    width: fit-content;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: none;
+    border-bottom: 2px solid black;
+    font-size: large;
+    padding: 4px
+
+}
+control:focus{
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: none;
+    border-bottom: 2px solid green;
+
+}
+.mt-2{
+    margin-top: 25px;
+}
+.card{
+    
+    background-color: white;
+    border-radius: 10px;
+    overflow:hidden;
+    border:1px solid black;
+    box-shadow: inset 3px;
+    padding: 20px;
+
+}
