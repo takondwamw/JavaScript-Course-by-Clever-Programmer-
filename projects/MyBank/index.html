@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Bank App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+ <div class="container-fluid">
+    <div class="container jumbotron">
+        <div class="alert alert-info mt-5"> <p class="text-muted">Nothing At The moment yet</p></div>
+        <div class="row">
+             <!-- screen -->
+            <div class="d-flex align-items-center justify-content-between">
+                <h6 class="text-white ">Welcome To MyBank App</h6>
+                <h1 class="text-white screen">00.00</h1>
+             </div>
+
+        </div>
+
+        <div class="row">          
+             <div class="form-group col-md-6">
+                <input type="number" step=".01" id="money" value="00.00" class="form-control">
+             </div>
+
+             <div class="form-group col-md-6">
+                <button class="btn btn-info " onclick="tkAcc.deposit()">Deposit</button>
+                <buttton class="btn btn-danger " onclick="tkAcc.withdraw()">Withdraw</buttton>
+             </div>
+
+        </div>
+        <div class="row">
+            <table class="mt-5 bg-white table table-hover table-responsive table-striped">
+                <thead>
+                    <th>Transaction ID</th>
+                    <th>Activity</th>
+                    <th>Amount</th>
+                    <th>Balance</th>
+                    <th>Message</tr>
+                </thead>
+               <tbody id="here">
+
+               </tbody>
+            </table>
+
+        </div>
+        <div class="row">
+            <table class="table table-hover">
+                ...
+              </table>
+        </div>
+    </div>
+ </div> 
+ <script src="script.js"></script>
+</body>
+</html>
