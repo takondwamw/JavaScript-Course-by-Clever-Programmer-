@@ -395,4 +395,6 @@ const weatherScorer = (weather, weather2) => {
 // console.log(weatherScorer('rainy', 'sunny'))
 
 // DOG API
-// https://dog.ceo/api/breeds/image/random
+// https://dog.ceo/api/breeds/image/random 
+const getSum = async (a,b) => a + b;
+console.log(getSum(2 , 4).then( val => console.log(val) ))

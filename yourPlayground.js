@@ -118,3 +118,44 @@ getImg.onclick = () => {
 }
 // console.log("hello");
 
+class Car {
+    constructor (name,color,speed)
+    {
+        this.name = name;
+        this.color = color;
+        this.speed = speed;
+        this.currentSpeed = 0;
+        this.driving = true;
+
+    }
+
+    drive(){
+        // this.currentSpeed += 10;
+        // return console.log( `you are driving at ${ this.speed}`)
+        if ( this.drive ){
+            this.currentSpeed = this.speed;
+            setInterval( () => {
+                     this.currentSpeed += 1;
+                     return console.log( `you are driving at ${ this.currentSpeed}`);
+
+            },1000)
+
+        }
+        
+
+
+        
+    }
+
+    brake (){
+        this.driving = false
+        return  console.log(`car put to a halt with stopping spead as : ${this.currentSpeed}`);
+
+    }
+}
+
+const sienta = new Car('Sienta','Black',200);
+// sienta.drive();
+setTimeout(() => {
+    sienta.brake();
+},7000)

@@ -24,6 +24,7 @@ searchCity = () => {
   const city = document.getElementById('city-input').value;
   getWeatherData(city)
   .then((res)=>{
+    // console.log(res);
     showWeatherData(res);
   }).catch((error)=>{
     console.log(error);

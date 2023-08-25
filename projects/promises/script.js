@@ -23,9 +23,9 @@ const getData = async () => {
             player(song.url);
 
             buildUp += `
-                <div class="col-md-2">
+                <div class=" p-2 col-md-2 ">
                     <img src="${song.artwork}" class="img-fluid" alt="${ song.name}">
-                    <p class="text-center">${song.name} : plays ${song.streams} </p>
+                    <p class="text-center m-2">  ${ song.name }<span class="badge bg-white text-dark"> plays ${song.streams} </span ></p>
                 </div>
             `
           
