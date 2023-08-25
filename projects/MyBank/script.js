@@ -19,7 +19,7 @@ class Bank{
        
         this.balance += this.amount;   
         this.msg = `${this.amount} has been deposited successfully`;
-        console.log(Number(document.querySelector('input[type="number"]').value));
+        // console.log(Number(document.querySelector('input[type="number"]').value));
         let mount = this.amount;
         let bal = this.balance;
         let ms = this.msg;
@@ -89,8 +89,8 @@ class Bank{
 
     transact(transID){
         let accumulator = [];
-        let final = ""
-        console.log(transID)
+        let final = "";
+        // console.log(transID)
        let m =  transID.forEach((trans =>{
                 accumulator.push(Object.values(trans).map( item => `<td>${item}</td>`).join(""));
        }));
