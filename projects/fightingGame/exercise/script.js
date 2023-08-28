@@ -70,3 +70,21 @@ class Game {
 // Initialize the class here
 // Call the start function of the game
 
+let num = 0;
+while(num < 5) {
+  num++
+  console.log(`looping ${num}`);
+}
+let $=  (elm )=> {
+  return document.querySelector(elm)
+}
+
+let a = $("audio");  
+
+document.addEventListener('keydown' , (e) => {
+    // a.play()
+  if(e.key === 'p'){
+      console.log(a);
+      a.play();
+    }
+})

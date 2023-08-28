@@ -75,6 +75,7 @@ async function getMovieTrailer(id) {
   })
 }
 
+
 const setTrailer = trailers => {
   const iframe = document.getElementById('movieTrailer')
   const movieNotFound = document.querySelector('.movieNotFound')
