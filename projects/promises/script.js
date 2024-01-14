@@ -20,12 +20,13 @@ const getData = async () => {
         data = await response.json();
         console.log(data.data)
         data.data.forEach( song => {
+
             player(song.url);
 
             buildUp += `
                 <div class=" p-2 col-md-2 ">
                     <img src="${song.artwork}" class="img-fluid" alt="${ song.name}">
-                    <p class="text-center m-2">  ${ song.name }<span class="badge bg-white text-dark"> plays ${song.streams} </span ></p>
+                    <p class="text-center m-2">  ${ song.name }<span class="badge bg-white text-dark"> plays ${song.streams}  ${ song.url}</span ></p>
                 </div>
             `
           
